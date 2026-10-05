@@ -6,10 +6,6 @@ A practical Retrieval-Augmented Generation (RAG) project focused on a question t
 
 This repository implements an end-to-end RAG workflow using a small documentation-style knowledge base. It includes document ingestion, chunking, sparse and dense-style retrieval, hybrid ranking, answer generation, source citations, automated QA evaluation, and a comparison report across retrieval strategies.
 
-The project is intentionally structured like an engineering repository rather than a single notebook.
-
-> The included knowledge base and QA set are synthetic and were created for this portfolio project. No private company documents, customer data, or proprietary website content are included.
-
 ---
 
 ## What the system does
@@ -25,8 +21,6 @@ The pipeline:
 7. Returns the source pages used for the answer.
 8. Evaluates retrieval quality against a labeled QA set.
 9. Produces a comparison table showing which retrieval strategy performs best.
-
-The repository can run locally without requiring a paid API key. An extractive answer generator is included so the complete evaluation pipeline remains reproducible.
 
 ---
 
@@ -448,18 +442,3 @@ Main concepts demonstrated:
 **RAG · information retrieval · TF-IDF · semantic search · hybrid retrieval · source attribution · QA evaluation · MRR · Hit@K · answer evaluation**
 
 ---
-
-## Future improvements
-
-- replace LSA with sentence-transformer embeddings
-- add FAISS, Pinecone, Weaviate, or Milvus
-- add reranking with a cross-encoder
-- integrate an LLM answer generator
-- add RAGAS-style faithfulness metrics
-- evaluate different chunk sizes and overlaps
-- add query rewriting
-- add metadata filters
-- add FastAPI endpoints
-- add Docker support
-- add MLflow or experiment tracking
-- evaluate retrieval latency and cost
