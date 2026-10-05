@@ -1,0 +1,659 @@
+{
+  "lexical": {
+    "summary": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "answer_f1": 0.4426,
+      "keyword_coverage": 0.5833
+    },
+    "examples": [
+      {
+        "question": "How do I send an API token with a request?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "API tokens can be revoked immediately from the Developer settings page.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long is an OAuth access token valid?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "Access tokens are valid for one hour, and refresh tokens can be exchanged for a new access token without asking the user to sign in again.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.45161290322580644,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What status code is returned when I exceed the API limit?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "Rate-limit headers are returned with authenticated API responses so applications can monitor remaining capacity.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.09090909090909091,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How many API requests per minute does the Pro plan allow?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "The Free plan allows 60 requests per minute, the Pro plan allows 600 requests per minute, and Enterprise limits are configured with the account team.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.4827586206896552,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How should my application verify a webhook request?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "Every webhook request includes an X-Webhook-Signature header.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.37037037037037035,
+          "keyword_coverage": 0.3333333333333333
+        }
+      },
+      {
+        "question": "For how long are failed webhook deliveries retried?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "the service retries the webhook with exponential backoff for up to 24 hours.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.7500000000000001,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What discount is provided for annual Pro billing?",
+        "expected_source": "billing.md",
+        "predicted_answer": "Annual Pro subscriptions receive a 15 percent discount compared with paying monthly for twelve months.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does a downgrade from Pro to Free take effect?",
+        "expected_source": "billing.md",
+        "predicted_answer": "A workspace can downgrade from Pro to Free at any time.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.2105263157894737,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long are audit logs retained on the Pro plan?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Audit log history is retained for 30 days on Free workspaces, 180 days on Pro workspaces, and 365 days by default on Enterprise workspaces.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6285714285714286,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long do deleted project records remain recoverable?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Deleted project records remain recoverable for 30 days before permanent deletion.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.8421052631578948,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What happens after five failed password attempts?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "After five consecutive failed password attempts, password login for the account is locked for 15 minutes.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6363636363636364,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "Can recovery codes be reused?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "Recovery codes are shown when multi-factor authentication is enabled.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.11764705882352941,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "What is the maximum individual upload size on Pro?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "The maximum individual file size is 25 MB on Free, 250 MB on Pro, and 2 GB on Enterprise.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does an incomplete multipart upload session expire?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "Applications should calculate a checksum before multipart upload so the completed object can be verified.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.16666666666666669,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "Who can invite new workspace members?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "Only Owners and Admins can invite new workspace members.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 1.0,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long is a workspace invitation valid?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "Workspace roles and project permissions are evaluated together.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      }
+    ]
+  },
+  "semantic": {
+    "summary": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "answer_f1": 0.4426,
+      "keyword_coverage": 0.5833
+    },
+    "examples": [
+      {
+        "question": "How do I send an API token with a request?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "API tokens can be revoked immediately from the Developer settings page.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long is an OAuth access token valid?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "Access tokens are valid for one hour, and refresh tokens can be exchanged for a new access token without asking the user to sign in again.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.45161290322580644,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What status code is returned when I exceed the API limit?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "Rate-limit headers are returned with authenticated API responses so applications can monitor remaining capacity.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.09090909090909091,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How many API requests per minute does the Pro plan allow?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "The Free plan allows 60 requests per minute, the Pro plan allows 600 requests per minute, and Enterprise limits are configured with the account team.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.4827586206896552,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How should my application verify a webhook request?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "Every webhook request includes an X-Webhook-Signature header.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.37037037037037035,
+          "keyword_coverage": 0.3333333333333333
+        }
+      },
+      {
+        "question": "For how long are failed webhook deliveries retried?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "the service retries the webhook with exponential backoff for up to 24 hours.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.7500000000000001,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What discount is provided for annual Pro billing?",
+        "expected_source": "billing.md",
+        "predicted_answer": "Annual Pro subscriptions receive a 15 percent discount compared with paying monthly for twelve months.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does a downgrade from Pro to Free take effect?",
+        "expected_source": "billing.md",
+        "predicted_answer": "A workspace can downgrade from Pro to Free at any time.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.2105263157894737,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long are audit logs retained on the Pro plan?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Audit log history is retained for 30 days on Free workspaces, 180 days on Pro workspaces, and 365 days by default on Enterprise workspaces.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6285714285714286,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long do deleted project records remain recoverable?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Deleted project records remain recoverable for 30 days before permanent deletion.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.8421052631578948,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What happens after five failed password attempts?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "After five consecutive failed password attempts, password login for the account is locked for 15 minutes.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6363636363636364,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "Can recovery codes be reused?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "Recovery codes are shown when multi-factor authentication is enabled.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.11764705882352941,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "What is the maximum individual upload size on Pro?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "The maximum individual file size is 25 MB on Free, 250 MB on Pro, and 2 GB on Enterprise.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does an incomplete multipart upload session expire?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "Applications should calculate a checksum before multipart upload so the completed object can be verified.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.16666666666666669,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "Who can invite new workspace members?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "Only Owners and Admins can invite new workspace members.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 1.0,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long is a workspace invitation valid?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "An expired invitation must be replaced with a new invitation.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      }
+    ]
+  },
+  "hybrid": {
+    "summary": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "reciprocal_rank": 1.0,
+      "answer_f1": 0.4426,
+      "keyword_coverage": 0.5833
+    },
+    "examples": [
+      {
+        "question": "How do I send an API token with a request?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "API tokens can be revoked immediately from the Developer settings page.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long is an OAuth access token valid?",
+        "expected_source": "authentication.md",
+        "predicted_answer": "Access tokens are valid for one hour, and refresh tokens can be exchanged for a new access token without asking the user to sign in again.",
+        "top_source": "authentication.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.45161290322580644,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What status code is returned when I exceed the API limit?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "Rate-limit headers are returned with authenticated API responses so applications can monitor remaining capacity.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.09090909090909091,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How many API requests per minute does the Pro plan allow?",
+        "expected_source": "rate-limits.md",
+        "predicted_answer": "The Free plan allows 60 requests per minute, the Pro plan allows 600 requests per minute, and Enterprise limits are configured with the account team.",
+        "top_source": "rate-limits.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.4827586206896552,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How should my application verify a webhook request?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "Every webhook request includes an X-Webhook-Signature header.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.37037037037037035,
+          "keyword_coverage": 0.3333333333333333
+        }
+      },
+      {
+        "question": "For how long are failed webhook deliveries retried?",
+        "expected_source": "webhooks.md",
+        "predicted_answer": "the service retries the webhook with exponential backoff for up to 24 hours.",
+        "top_source": "webhooks.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.7500000000000001,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What discount is provided for annual Pro billing?",
+        "expected_source": "billing.md",
+        "predicted_answer": "Annual Pro subscriptions receive a 15 percent discount compared with paying monthly for twelve months.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does a downgrade from Pro to Free take effect?",
+        "expected_source": "billing.md",
+        "predicted_answer": "A workspace can downgrade from Pro to Free at any time.",
+        "top_source": "billing.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.2105263157894737,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "How long are audit logs retained on the Pro plan?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Audit log history is retained for 30 days on Free workspaces, 180 days on Pro workspaces, and 365 days by default on Enterprise workspaces.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6285714285714286,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long do deleted project records remain recoverable?",
+        "expected_source": "data-retention.md",
+        "predicted_answer": "Deleted project records remain recoverable for 30 days before permanent deletion.",
+        "top_source": "data-retention.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.8421052631578948,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "What happens after five failed password attempts?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "After five consecutive failed password attempts, password login for the account is locked for 15 minutes.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6363636363636364,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "Can recovery codes be reused?",
+        "expected_source": "account-security.md",
+        "predicted_answer": "Recovery codes are shown when multi-factor authentication is enabled.",
+        "top_source": "account-security.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.11764705882352941,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "What is the maximum individual upload size on Pro?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "The maximum individual file size is 25 MB on Free, 250 MB on Pro, and 2 GB on Enterprise.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.6666666666666666,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "When does an incomplete multipart upload session expire?",
+        "expected_source": "file-uploads.md",
+        "predicted_answer": "Applications should calculate a checksum before multipart upload so the completed object can be verified.",
+        "top_source": "file-uploads.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.16666666666666669,
+          "keyword_coverage": 0.0
+        }
+      },
+      {
+        "question": "Who can invite new workspace members?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "Only Owners and Admins can invite new workspace members.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 1.0,
+          "keyword_coverage": 1.0
+        }
+      },
+      {
+        "question": "How long is a workspace invitation valid?",
+        "expected_source": "team-permissions.md",
+        "predicted_answer": "Workspace roles and project permissions are evaluated together.",
+        "top_source": "team-permissions.md",
+        "metrics": {
+          "hit_at_1": 1.0,
+          "hit_at_3": 1.0,
+          "reciprocal_rank": 1.0,
+          "answer_f1": 0.0,
+          "keyword_coverage": 0.0
+        }
+      }
+    ]
+  }
+}

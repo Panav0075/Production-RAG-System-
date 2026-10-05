@@ -1,0 +1,15 @@
+documents:
+  path: data/source_docs
+
+retrieval:
+  chunk_size_words: 95
+  chunk_overlap_words: 20
+  top_k: 3
+  hybrid_alpha: 0.55
+  semantic_dimensions: 24
+  random_state: 42
+
+evaluation:
+  qa_path: data/evaluation/qa_pairs.json
+  output_json: reports/evaluation_results.json
+  output_markdown: reports/retrieval_evaluation.md

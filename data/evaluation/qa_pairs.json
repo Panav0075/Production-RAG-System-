@@ -1,0 +1,142 @@
+[
+  {
+    "question": "How do I send an API token with a request?",
+    "expected_answer": "Send the token in the Authorization header using the Bearer scheme.",
+    "expected_source": "authentication.md",
+    "keywords": [
+      "Authorization header",
+      "Bearer"
+    ]
+  },
+  {
+    "question": "How long is an OAuth access token valid?",
+    "expected_answer": "Access tokens are valid for one hour.",
+    "expected_source": "authentication.md",
+    "keywords": [
+      "one hour"
+    ]
+  },
+  {
+    "question": "What status code is returned when I exceed the API limit?",
+    "expected_answer": "The API returns HTTP 429 Too Many Requests.",
+    "expected_source": "rate-limits.md",
+    "keywords": [
+      "429",
+      "Too Many Requests"
+    ]
+  },
+  {
+    "question": "How many API requests per minute does the Pro plan allow?",
+    "expected_answer": "The Pro plan allows 600 requests per minute.",
+    "expected_source": "rate-limits.md",
+    "keywords": [
+      "600",
+      "requests per minute"
+    ]
+  },
+  {
+    "question": "How should my application verify a webhook request?",
+    "expected_answer": "Compute the HMAC-SHA256 signature from the raw request body using the signing secret and compare it with the X-Webhook-Signature header.",
+    "expected_source": "webhooks.md",
+    "keywords": [
+      "HMAC-SHA256",
+      "raw request body",
+      "X-Webhook-Signature"
+    ]
+  },
+  {
+    "question": "For how long are failed webhook deliveries retried?",
+    "expected_answer": "Failed webhook deliveries are retried with exponential backoff for up to 24 hours.",
+    "expected_source": "webhooks.md",
+    "keywords": [
+      "24 hours",
+      "exponential backoff"
+    ]
+  },
+  {
+    "question": "What discount is provided for annual Pro billing?",
+    "expected_answer": "Annual Pro subscriptions receive a 15 percent discount.",
+    "expected_source": "billing.md",
+    "keywords": [
+      "15 percent"
+    ]
+  },
+  {
+    "question": "When does a downgrade from Pro to Free take effect?",
+    "expected_answer": "The downgrade takes effect at the end of the current billing period.",
+    "expected_source": "billing.md",
+    "keywords": [
+      "end",
+      "current billing period"
+    ]
+  },
+  {
+    "question": "How long are audit logs retained on the Pro plan?",
+    "expected_answer": "Audit log history is retained for 180 days on Pro workspaces.",
+    "expected_source": "data-retention.md",
+    "keywords": [
+      "180 days",
+      "Pro"
+    ]
+  },
+  {
+    "question": "How long do deleted project records remain recoverable?",
+    "expected_answer": "Deleted project records remain recoverable for 30 days.",
+    "expected_source": "data-retention.md",
+    "keywords": [
+      "30 days",
+      "recoverable"
+    ]
+  },
+  {
+    "question": "What happens after five failed password attempts?",
+    "expected_answer": "Password login is locked for 15 minutes.",
+    "expected_source": "account-security.md",
+    "keywords": [
+      "locked",
+      "15 minutes"
+    ]
+  },
+  {
+    "question": "Can recovery codes be reused?",
+    "expected_answer": "Each recovery code can be used once.",
+    "expected_source": "account-security.md",
+    "keywords": [
+      "once"
+    ]
+  },
+  {
+    "question": "What is the maximum individual upload size on Pro?",
+    "expected_answer": "The maximum individual file size on Pro is 250 MB.",
+    "expected_source": "file-uploads.md",
+    "keywords": [
+      "250 MB",
+      "Pro"
+    ]
+  },
+  {
+    "question": "When does an incomplete multipart upload session expire?",
+    "expected_answer": "Multipart sessions expire after 24 hours if they are not completed.",
+    "expected_source": "file-uploads.md",
+    "keywords": [
+      "24 hours"
+    ]
+  },
+  {
+    "question": "Who can invite new workspace members?",
+    "expected_answer": "Only Owners and Admins can invite new workspace members.",
+    "expected_source": "team-permissions.md",
+    "keywords": [
+      "Owners",
+      "Admins"
+    ]
+  },
+  {
+    "question": "How long is a workspace invitation valid?",
+    "expected_answer": "Invitations expire after seven days.",
+    "expected_source": "team-permissions.md",
+    "keywords": [
+      "seven days"
+    ]
+  }
+]
